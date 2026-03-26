@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Mestre Bergamassa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffc0cb; /* Rosa principal do fundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #89CFF0; /* Azul Bebê da seção de info */
+            border-radius: 30px;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Lado Esquerdo - Informações */
+        .info-section {
+            flex: 1;
+            padding: 40px;
+            color: #444;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-section h1 {
+            font-size: 22px;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            margin-top: 0;
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+            font-size: 16px;
+            word-wrap: break-word; /* Garante que o email longo não quebre o layout */
+        }
+
+        .contact-item strong {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            color: #fff;
+        }
+
+        .contact-item span {
+            color: #444;
+            font-weight: 500;
+        }
+
+        /* Lado Direito - Onde ficava o formulário, agora a Imagem */
+        .image-section {
+            flex: 1.2;
+            background-color: white;
+            padding: 20px; /* Padding menor para a imagem ocupar mais espaço */
+            border-radius: 50px 0 0 50px; /* Mantém a curva da imagem original */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Garante que a imagem caiba sem distorcer */
+            border-radius: 20px; /* Bordas arredondadas na imagem para combinar */
+        }
+
+        /* Responsividade para celular */
+        @media (max-width: 650px) {
+            .container {
+                flex-direction: column;
+            }
+            .image-section {
+                border-radius: 0;
+                padding: 10px;
+            }
+            .image-section img {
+                max-height: 300px; /* Limita altura no celular */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="info-section">
+            <h1>Entrar em contato com o Mestre Bergamassa</h1>
+            
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <span>thiago.bergamassa@fatec.sp.gov.br</span>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="Monstro.png" alt="Monstro - Mestre Bergamassa">
+        </div>
+    </div>
+
+</body>
+</html>
